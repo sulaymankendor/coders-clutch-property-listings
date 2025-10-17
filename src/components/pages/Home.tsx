@@ -1,11 +1,11 @@
-import React from "react";
 import Listings from "../home/Listings";
 import { properties } from "../../utils/data";
 import heroImage from "../../assets/house2.jpg";
+import ListingSearchFiltering from "../home/ListingSearchFiltering";
 
 function Home() {
   return (
-    <section className="mt-32">
+    <section>
       <div className="grid grid-cols-2 [1281px]:w-[70%] w-[75%] max-[1281px]:gap-8 mx-auto">
         <img
           src={heroImage}
@@ -47,7 +47,11 @@ function Home() {
           </a>
         </div>
       </div>
-      <Listings title="Latest Listings" mt={"mt-14"} properties={properties} />
+      <ListingSearchFiltering />
+      <Listings
+        // mt={"mt-14"}
+        properties={properties}
+      />
     </section>
   );
 }

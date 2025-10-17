@@ -8,3 +8,11 @@ export type propertyType = {
   sizeSqFt: number;
   slug: string;
 };
+
+export type agentType = {
+  id: number;
+  name: string;
+  phoneNumber: string;
+  email: string;
+  websiteUrl: string;
+};

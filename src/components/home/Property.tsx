@@ -47,7 +47,7 @@ function Property({ property }: { property: propertyType }) {
           </div>
           <Link
             // to={`/properties/${property.name}`} //to be changed
-            to={"/agents"}
+            to={`/property/${property.id}`}
             className="cursor-pointer bg-sky-600 hover:bg-sky-700 transition-all p-2 rounded-full"
           >
             <ArrowUpRightIcon />

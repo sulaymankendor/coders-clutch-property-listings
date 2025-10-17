@@ -1,7 +1,14 @@
-import React from "react";
+import AgentsListings from "../agents/AgentsListings";
+import { agents } from "../../utils/data";
+import AgentsSearch from "../agents/AgentsSearch";
 
-function Agents() {
-  return <div className="mt-32 text-center">Agents</div>;
+function page() {
+  return (
+    <section className="w-[90%] mx-auto">
+      <AgentsSearch />
+      <AgentsListings agents={agents} />
+    </section>
+  );
 }
 
-export default Agents;
+export default page;

@@ -9,8 +9,7 @@ function Header() {
         <div className="flex items-center justify-between py-3 px-6">
           {/* Logo Section */}
           <p className="font-bold text-xl">
-            <span className="text-sky-700">K</span>ord{""}
-            <span className="text-sky-700">a</span>
+            <span className="text-sky-800">Property Finder</span>
           </p>
 
           {/* Navigation */}
