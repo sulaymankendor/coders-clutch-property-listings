@@ -1,12 +1,14 @@
 import Listings from "../home/Listings";
-import { properties } from "../../utils/data";
 import heroImage from "../../assets/house2.jpg";
-import ListingSearchFiltering from "../home/ListingSearchFiltering";
+import ListingSearchFiltering from "../home/ListingSearchFilter";
+import { LoadingSpinner } from "../reusables/LoadingSpinner";
+import { useGetProperties } from "@/hooks/useGetProperties";
 
 function Home() {
+  const { propertiesRequest } = useGetProperties();
   return (
     <section>
-      <div className="grid grid-cols-2 [1281px]:w-[70%] w-[75%] max-[1281px]:gap-8 mx-auto">
+      <div className="grid grid-cols-2 gap-8 [1281px]:w-[70%] w-[75%] max-[1281px]:gap-8 mx-auto">
         <img
           src={heroImage}
           alt="hero image"
@@ -48,10 +50,20 @@ function Home() {
         </div>
       </div>
       <ListingSearchFiltering />
-      <Listings
-        // mt={"mt-14"}
-        properties={properties}
-      />
+      {propertiesRequest.isLoading ? (
+        <LoadingSpinner />
+      ) : propertiesRequest.errorMsg ? (
+        <div className="text-center py-10">
+          <p className="text-red-700 text-sm">{propertiesRequest.errorMsg}</p>
+        </div>
+      ) : propertiesRequest.properties &&
+        propertiesRequest.properties.length > 0 ? (
+        <Listings propertiesRequest={propertiesRequest} />
+      ) : (
+        <div className="text-center py-10">
+          <p className="text-gray-500 text-sm">No properties found</p>
+        </div>
+      )}
     </section>
   );
 }

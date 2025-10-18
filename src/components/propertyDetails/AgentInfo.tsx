@@ -4,8 +4,11 @@ import EnvelopeIcon from "../svgs/EnvelopeIcon";
 import GlobeIcon from "../svgs/GlobeIcon";
 import FiveStarsRate from "../reusables/FiveStarsRate";
 import profileImg from "../../assets/profile.jpg";
+import type { agentType } from "@/utils/type";
+import { Link, Router, useNavigate } from "react-router-dom";
 
-function AgentInfo() {
+function AgentInfo({ agent }: { agent: agentType }) {
+  const navigate = useNavigate();
   return (
     <div className="border border-gray-300 w-[15rem] px-5 py-3 rounded-xl mt-3">
       <h1 className="font-semibold text-lg text-gray-800">Agent</h1>
@@ -19,34 +22,42 @@ function AgentInfo() {
             className="size-12 rounded-full object-cover"
           />
           <div>
-            <p className="text-sm font-semibold text-gray-800">
-              Sulayman Kendor
-            </p>
+            <p className="text-sm font-semibold text-gray-800">{agent.name}</p>
             <p className="text-xs text-gray-500">Senior Real Estate Agent</p>
-            <FiveStarsRate rating={3} />
+            <FiveStarsRate rating={agent.rating} />
           </div>
         </div>
         <div className="flex flex-col gap-1">
           <div className="flex items-center gap-2">
-            <PhoneIcon size="size-4" />
-            <p className="text-[13px] text-gray-500">+220 2793307</p>
+            <div>
+              <PhoneIcon size="size-4" />
+            </div>
+            <p className="text-[13px] text-gray-500">{agent.phoneNumber}</p>
           </div>
           <div className="flex items-center gap-2">
-            <EnvelopeIcon />
-            <p className="text-[13px] text-gray-500">lambda@gmail.com</p>
+            <div>
+              <EnvelopeIcon />
+            </div>
+            <p className="text-[13px] text-gray-500 truncate">{agent.email}</p>
           </div>
-          <div className="flex items-center gap-2">
-            <GlobeIcon />
-            <p className="text-[13px] text-gray-500">lambda@gmail.com</p>
+          <div className="flex items-center gap-2 w-full">
+            <div>
+              <GlobeIcon />
+            </div>
+            <p className="text-[13px] text-gray-500 truncate">
+              {agent.websiteUrl}
+            </p>
           </div>
         </div>
       </div>
-      <button
-        // href={"/"}
-        className="bg-sky-600 text-sm transition-all hover:bg-sky-700 w-full text-white font-medium py-2 rounded-full mt-4"
-      >
-        View
-      </button>
+      <div>
+        <button
+          onClick={() => navigate(`/agent/${agent.id}`)}
+          className="bg-sky-600 text-sm transition-all hover:bg-sky-700 w-full text-white font-medium py-2 rounded-full mt-4 text-center"
+        >
+          View
+        </button>
+      </div>
     </div>
   );
 }

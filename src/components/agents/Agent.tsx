@@ -5,7 +5,7 @@ import GlobeIcon from "../svgs/GlobeIcon";
 import EnvelopeIcon from "../svgs/EnvelopeIcon";
 import PhoneIcon from "../svgs/PhoneIcon";
 import FiveStarsRate from "../reusables/FiveStarsRate";
-import { Link, Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 import profileUrl from "../../assets/profile.jpg";
 import type { agentType } from "../../utils/type";
 
@@ -13,6 +13,7 @@ function Agent({ agent }: { agent: agentType }) {
   return (
     <div className="border border-gray-200 py-4 rounded-lg relative">
       <img
+        // src={agent.profileImageUrl}
         src={profileUrl}
         alt="hero image"
         width={1920} // or the actual image width
@@ -23,7 +24,7 @@ function Agent({ agent }: { agent: agentType }) {
         <div>
           <h1 className="text-sm font-semibold text-gray-800">{agent.name}</h1>
         </div>
-        <FiveStarsRate rating={4} />
+        <FiveStarsRate rating={agent.rating} />
       </div>
       <div className="flex flex-col gap-2 pt-3 px-4">
         <div className="flex items-center gap-2">

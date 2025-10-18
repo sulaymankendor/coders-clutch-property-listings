@@ -6,11 +6,13 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { MapPin } from "lucide-react";
 
 export function Locations() {
   return (
     <Select>
       <SelectTrigger className="min-w-[100px] py-1 rounded-lg text-gray-500 text-xs focus-visible:border focus-visible:border-gray-200 border border-gray-200 shadow-none focus-visible:ring-0">
+        <MapPin className="w-4 h-4 mr-2" />
         <SelectValue placeholder="Locations" />
       </SelectTrigger>
       <SelectContent>

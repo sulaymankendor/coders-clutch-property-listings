@@ -1,6 +1,8 @@
 import { Locations } from "../reusables/Locations";
 import Filters from "../reusables/Filters";
 import SearchBar from "../reusables/SearchBar";
+import { PriceRangeFilter } from "../reusables/PriceRangeFilter";
+import { SortBy } from "../reusables/SortBy";
 
 function ListingSearchFiltering() {
   return (
@@ -9,10 +11,9 @@ function ListingSearchFiltering() {
         Listings
       </h1>
       <div className="flex w-[90%] mx-auto items-center gap-4">
-        <div className="w-[40%] mx-auto">
+        <div className="w-[40%]">
           <SearchBar className="w-full" />
         </div>
-        <Filters />
       </div>
       <div>
         <div className="flex justify-between items-center w-[90%] mx-auto mt-5">
@@ -24,6 +25,8 @@ function ListingSearchFiltering() {
           </p>
           <div className="flex items-center gap-1">
             <Locations />
+            <PriceRangeFilter />
+            <SortBy />
             {/* <Locations /> */}
           </div>
         </div>

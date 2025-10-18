@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { navs } from "../../utils/data";
+import { useLocation } from "react-router-dom";
 
 function Header() {
+  const pathname = useLocation().pathname;
   const [showNavs, setShowNavs] = useState(false);
   return (
     <header className="bg-white fixed top-0 left-0 right-0 z-[3000] backdrop-blur-sm border-b border-gray-400/20">
@@ -15,19 +17,19 @@ function Header() {
           {/* Navigation */}
           <nav className="max-sm:hidden lg:flex items-center space-x-1">
             {navs.map((nav) => {
-              //   const isActive =
-              //     pathname === nav.link
-              //       ? true
-              //       : pathname === nav.link
-              //       ? true
-              //       : pathname.includes(nav.link + "/");
+              const isActive =
+                pathname === nav.link
+                  ? true
+                  : pathname === nav.link
+                  ? true
+                  : pathname.includes(nav.link + "/");
 
               return (
                 <a
                   key={nav.id}
                   href={nav.href}
                   className={`relative rounded-xl px-6 py-3 hover:bg-sky-100 hover:text-sky-600 font-medium text-sm tracking-wide transition-all duration-300 group
-                  ${true ? "bg-sky-100 text-sky-600" : "bg-white"}`}
+                  ${isActive ? "bg-sky-100 text-sky-600" : "bg-white"}`}
                 >
                   {nav.name}
                 </a>

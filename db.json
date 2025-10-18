@@ -1,0 +1,282 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "name": "Luxury City Apartment",
+      "pricePerMonth": 2500,
+      "location": "Downtown, New York",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sizeSqFt": 1200,
+      "slug": "luxury-city-apartment",
+      "description": "Experience sophisticated urban living in this luxury city apartment located in the vibrant heart of downtown New York. The residence features floor-to-ceiling windows that flood the space with natural light, a modern kitchen with stainless steel appliances, and high-end finishes throughout. With convenient access to world-class restaurants, boutiques, and cultural landmarks, this apartment perfectly blends comfort with cosmopolitan style.",
+      "imageUrl": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Cozy Suburban Home",
+      "pricePerMonth": 1800,
+      "location": "Brooklyn, New York",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sizeSqFt": 1600,
+      "slug": "cozy-suburban-home",
+      "description": "Nestled in a quiet and friendly Brooklyn neighborhood, this cozy suburban home offers a peaceful retreat just minutes from the city. It features spacious living areas, an open kitchen with modern finishes, and a private backyard perfect for outdoor gatherings. With excellent nearby schools, parks, and shopping options, it's the ideal choice for families seeking comfort and community.",
+      "imageUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "name": "Modern Loft",
+      "pricePerMonth": 2200,
+      "location": "Soho, New York",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sizeSqFt": 950,
+      "slug": "modern-loft",
+      "description": "This modern loft in Soho combines industrial charm with contemporary elegance. Boasting high ceilings, exposed brick walls, and an open-concept floor plan, it provides a spacious and stylish living environment. Residents can enjoy walking distance to galleries, designer stores, and some of the finest dining experiences New York has to offer.",
+      "imageUrl": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
+      "rating": 5
+    },
+    {
+      "id": 4,
+      "name": "Spacious Family House",
+      "pricePerMonth": 3200,
+      "location": "Queens, New York",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "sizeSqFt": 2100,
+      "slug": "spacious-family-house",
+      "description": "This spacious family house in Queens is perfect for growing families seeking both space and comfort. The property offers a large kitchen, a bright living room, and a backyard ideal for children and pets. Its location provides easy access to local schools, parks, and public transportation, making daily life both convenient and enjoyable.",
+      "imageUrl": "https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=800&q=80",
+      "rating": 4
+    },
+    {
+      "id": 5,
+      "name": "Penthouse Suite",
+      "pricePerMonth": 5000,
+      "location": "Manhattan, New York",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "sizeSqFt": 2500,
+      "slug": "penthouse-suite",
+      "description": "Perched high above Manhattan, this stunning penthouse suite offers panoramic views of the city skyline. It features a private rooftop terrace, spa-inspired bathrooms, and luxurious interiors crafted with the finest materials. Perfect for those who value privacy and elegance, this penthouse delivers an unmatched New York living experience.",
+      "imageUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+      "rating": 5
+    },
+    {
+      "id": 6,
+      "name": "Beachside Villa",
+      "pricePerMonth": 4200,
+      "location": "Miami Beach, Florida",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "sizeSqFt": 2800,
+      "slug": "beachside-villa",
+      "description": "Wake up to the sound of waves in this stunning beachside villa located on the shores of Miami Beach. Designed with a modern coastal aesthetic, it features an open floor plan, infinity pool, and spacious outdoor lounge areas perfect for entertaining. The villa provides the ultimate combination of luxury, relaxation, and breathtaking ocean views.",
+      "imageUrl": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80",
+      "rating": 5
+    },
+    {
+      "id": 7,
+      "name": "Downtown Studio",
+      "pricePerMonth": 1500,
+      "location": "Chicago, Illinois",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sizeSqFt": 700,
+      "slug": "downtown-studio",
+      "description": "This stylish downtown studio in Chicago offers compact yet efficient living designed for modern professionals. The unit includes high-end finishes, in-unit laundry, and large windows showcasing the city's skyline. Located just steps away from coffee shops, restaurants, and transit, it's the perfect base for urban living.",
+      "imageUrl": "https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=800&q=80",
+      "rating": 3
+    },
+    {
+      "id": 8,
+      "name": "Countryside Cottage",
+      "pricePerMonth": 1300,
+      "location": "Nashville, Tennessee",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sizeSqFt": 1100,
+      "slug": "countryside-cottage",
+      "description": "Escape city life and enjoy peaceful country living in this charming countryside cottage just outside Nashville. Featuring a rustic design with a cozy fireplace, exposed beams, and a large porch overlooking scenic views, it's ideal for relaxation. The property sits on a spacious lot surrounded by trees, offering complete privacy and serenity.",
+      "imageUrl": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80",
+      "rating": 4
+    },
+    {
+      "id": 9,
+      "name": "Luxury High-Rise Condo",
+      "pricePerMonth": 3500,
+      "location": "San Francisco, California",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sizeSqFt": 1350,
+      "slug": "luxury-high-rise-condo",
+      "description": "This luxury high-rise condo in the heart of San Francisco combines modern design with unparalleled amenities. Enjoy floor-to-ceiling glass walls, smart home features, and access to a state-of-the-art gym and concierge service. Perfectly situated near tech hubs, fine dining, and cultural hotspots, it provides the ideal urban lifestyle.",
+      "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "rating": 5
+    },
+    {
+      "id": 10,
+      "name": "Modern Townhouse",
+      "pricePerMonth": 2700,
+      "location": "Austin, Texas",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sizeSqFt": 1750,
+      "slug": "modern-townhouse",
+      "description": "Located in one of Austin's most desirable neighborhoods, this modern townhouse offers stylish architecture and open, airy interiors. It features a gourmet kitchen, private garage, and outdoor patio ideal for evening relaxation. With nearby cafes, music venues, and walking trails, it's a perfect balance of modern comfort and local charm.",
+      "imageUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      "rating": 4
+    },
+    {
+      "id": 11,
+      "name": "Chic Historic Brownstone",
+      "pricePerMonth": 2900,
+      "location": "Boston, Massachusetts",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sizeSqFt": 1100,
+      "slug": "chic-historic-brownstone",
+      "description": "Live in classic Boston elegance with this beautifully restored brownstone apartment. Featuring high ceilings, original hardwood floors, and period details, this unit offers a blend of historic charm and modern amenities. Situated in a coveted neighborhood, you're steps from boutique shopping, public gardens, and top dining spots.",
+      "imageUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
+      "rating": 2
+    },
+    {
+      "id": 12,
+      "name": "Ski-In/Ski-Out Chalet",
+      "pricePerMonth": 6500,
+      "location": "Aspen, Colorado",
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "sizeSqFt": 3500,
+      "slug": "ski-in-ski-out-chalet",
+      "description": "The ultimate mountain retreat, this luxurious chalet offers direct slope access. It features a massive stone fireplace, a gourmet kitchen, and a private hot tub with stunning views of the Rockies. Perfect for winter sports enthusiasts seeking comfort and convenience.",
+      "imageUrl": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
+      "rating": 5
+    }
+  ],
+  "agents": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "phoneNumber": "+1 555-123-4567",
+      "email": "john.doe@premierhomes.com",
+      "websiteUrl": "https://premierhomes.com/johndoe",
+      "profileImageUrl": "https://images.unsplash.com/photo-1560250097-fb5c20d75a89?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "rating": 4,
+      "bio": "John Doe is a seasoned real estate professional with over 15 years of experience in the luxury property market. Specializing in high-end residential properties and investment opportunities, John has built a reputation for his meticulous attention to detail and exceptional client service. His deep understanding of market trends and property valuation has helped hundreds of clients find their dream homes and make sound investment decisions. John holds a Master's degree in Real Estate Development and is a certified luxury home marketing specialist. When he's not closing deals, John enjoys mentoring new agents and giving back to the community through various housing initiatives."
+    },
+    {
+      "id": 2,
+      "name": "Sarah Williams",
+      "phoneNumber": "+1 555-987-6543",
+      "email": "sarah.williams@eliteestates.com",
+      "websiteUrl": "https://eliteestates.com/sarahwilliams",
+      "profileImageUrl": "https://images.unsplash.com/photo-1627889148560-0a37466efd0d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "rating": 5,
+      "bio": "Sarah Williams is an award-winning real estate agent who has consistently been recognized as a top performer in her market. With a background in interior design and architecture, Sarah brings a unique perspective to property sales, helping clients envision the full potential of every space. Her expertise spans from historic brownstones to modern condominiums, and she has facilitated over $200 million in property transactions throughout her distinguished career. Sarah is known for her strategic marketing approach, utilizing cutting-edge technology and social media to showcase properties to their fullest advantage. She is passionate about sustainable living and often advises clients on eco-friendly home improvements and energy-efficient properties."
+    },
+    {
+      "id": 3,
+      "name": "Michael Brown",
+      "phoneNumber": "+1 555-222-3344",
+      "email": "michael.brown@cityrealty.com",
+      "websiteUrl": "https://cityrealty.com/michaelbrown",
+      "profileImageUrl": "https://images.unsplash.com/photo-1582213782176-c57be55551ad?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "rating": 3,
+      "bio": "Michael Brown brings a decade of real estate experience with a focus on urban properties and first-time homebuyers. His approachable demeanor and patient teaching style make him an ideal agent for those navigating the complex world of real estate for the first time. Michael previously worked as a financial analyst, which gives him a unique advantage in helping clients understand mortgage options, investment potential, and long-term property value. He is particularly skilled at finding hidden gems in up-and-coming neighborhoods and has an eye for properties with strong appreciation potential. Michael is actively involved in local community development projects and believes in the transformative power of homeownership."
+    },
+    {
+      "id": 4,
+      "name": "Emily Johnson",
+      "phoneNumber": "+1 555-777-8899",
+      "email": "emily.johnson@modernspaces.com",
+      "websiteUrl": "https://modernspaces.com/emilyjohnson",
+      "profileImageUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2576&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "rating": 5,
+      "bio": "Emily Johnson is a dynamic real estate expert specializing in contemporary architecture and modern living spaces. With a keen eye for design and a passion for innovative properties, Emily has become the go-to agent for clients seeking cutting-edge homes with smart technology and sustainable features. Her background in marketing and brand management has made her exceptionally skilled at positioning properties in the market and negotiating favorable terms for her clients. Emily's dedication to staying ahead of industry trends means she's always aware of the latest developments in real estate technology, from virtual tours to blockchain transactions. She has been featured in several real estate publications and frequently speaks at industry conferences about the future of modern housing."
+    },
+    {
+      "id": 5,
+      "name": "David Smith",
+      "phoneNumber": "+1 555-444-1212",
+      "email": "david.smith@homefinders.com",
+      "websiteUrl": "https://homefinders.com/davidsmith",
+      "profileImageUrl": "https://images.unsplash.com/photo-1600486913490-681533261a86?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "rating": 2,
+      "bio": "David Smith is a straightforward and honest real estate agent who values transparency and integrity above all else. With eight years in the industry, David has built his practice on the principle that every client deserves honest advice and realistic expectations. He specializes in suburban family homes and understands the unique needs of growing families looking for safe neighborhoods, good schools, and community amenities. David's background in construction management gives him valuable insight into property condition, potential issues, and renovation costs, which he freely shares with his clients. While he may not be the flashiest agent, his clients appreciate his down-to-earth approach and commitment to finding them the right home at the right price, even if it means a smaller commission for him."
+    },
+    {
+      "id": 6,
+      "name": "Jessica Lee",
+      "phoneNumber": "+1 555-888-2233",
+      "email": "jessica.lee@dreamproperties.com",
+      "websiteUrl": "https://dreamproperties.com/jessicalee",
+      "profileImageUrl": "https://images.unsplash.com/photo-1559404221-a4b2795f5539?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "rating": 4,
+      "bio": "Jessica Lee is a multilingual real estate professional fluent in English, Mandarin, and Spanish, making her an invaluable resource for international buyers and diverse communities. Her global perspective and cultural sensitivity have helped bridge gaps for countless families relocating to new areas. With 12 years of experience, Jessica has developed expertise in investment properties, vacation homes, and luxury condominiums. She maintains an extensive network of international investors and understands the unique challenges of cross-border real estate transactions. Jessica's commitment to education is evident in the regular seminars she hosts for first-time international buyers, covering topics from visa requirements to property management. Her clients value her responsiveness, attention to detail, and ability to navigate complex transactions with grace and professionalism."
+    },
+    {
+      "id": 7,
+      "name": "Robert Taylor",
+      "phoneNumber": "+1 555-999-5566",
+      "email": "robert.taylor@urbanliving.com",
+      "websiteUrl": "https://urbanliving.com/roberttaylor",
+      "profileImageUrl": "https://images.unsplash.com/photo-1605655519842-8c886e580a9d?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "rating": 1,
+      "bio": "Robert Taylor is a new agent who recently transitioned into real estate after a career in retail management. While he brings enthusiasm and a strong work ethic to his new profession, Robert is still learning the intricacies of the real estate market and building his client base. His previous experience in customer service has given him good communication skills, though he sometimes struggles with the technical aspects of property transactions and market analysis. Robert is actively pursuing additional training and certifications to improve his knowledge and better serve his clients. He is particularly interested in working with young professionals and understands the challenges of entering the housing market for the first time. Despite being early in his real estate career, Robert is determined to grow and develop into a trusted advisor for his clients."
+    },
+    {
+      "id": 8,
+      "name": "Olivia Harris",
+      "phoneNumber": "+1 555-333-7788",
+      "email": "olivia.harris@nextlevelrealty.com",
+      "websiteUrl": "https://nextlevelrealty.com/oliviaharris",
+      "profileImageUrl": "https://images.unsplash.com/photo-1627889149021-364e7c72f750?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "rating": 5,
+      "bio": "Olivia Harris is a powerhouse in the real estate industry, known for her exceptional negotiation skills and unwavering dedication to her clients. With 18 years of experience and numerous industry awards, Olivia has established herself as one of the premier agents in the luxury market. Her impressive track record includes representing high-profile clients, celebrity home sales, and record-breaking property transactions. Olivia's success stems from her comprehensive market knowledge, sophisticated marketing strategies, and an extensive network of industry contacts. She pioneered the use of drone photography and 3D virtual tours in her market and continues to innovate in property presentation. Beyond her professional achievements, Olivia is deeply committed to philanthropic work, serving on the board of several housing charities and advocating for affordable housing initiatives."
+    },
+    {
+      "id": 9,
+      "name": "Daniel Martinez",
+      "phoneNumber": "+1 555-666-9911",
+      "email": "daniel.martinez@brightkeyhomes.com",
+      "websiteUrl": "https://brightkeyhomes.com/danielmartinez",
+      "profileImageUrl": "https://images.unsplash.com/photo-1560525642-a164c01d4a8e?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "rating": 3,
+      "bio": "Daniel Martinez is a reliable and consistent real estate agent with a solid reputation for getting deals done. With seven years in the business, Daniel has carved out a niche working with middle-market properties and helping families find affordable housing solutions. His practical approach and realistic market assessments help clients make informed decisions without the pressure of aggressive sales tactics. Daniel's background in property management gives him unique insights into the long-term costs and maintenance considerations of homeownership. While he may not have the flashiest listings or the highest sales volume, Daniel's clients appreciate his steady presence, clear communication, and genuine interest in their well-being. He maintains long-term relationships with past clients and receives much of his business through referrals and repeat customers."
+    },
+    {
+      "id": 10,
+      "name": "Sophia Anderson",
+      "phoneNumber": "+1 555-555-6677",
+      "email": "sophia.anderson@bluehorizonrealty.com",
+      "websiteUrl": "https://bluehorizonrealty.com/sophiaanderson",
+      "profileImageUrl": "https://images.unsplash.com/photo-1610943632297-c79b8f2f4514?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "rating": 5,
+      "bio": "Sophia Anderson is an exceptional real estate professional who has redefined what it means to provide concierge-level service in property transactions. With 20 years of experience and a background in luxury hospitality management, Sophia treats every client like a VIP, regardless of their budget or property type. Her attention to detail is legendary, and she is known for anticipating client needs before they even arise. Sophia's expertise spans residential, commercial, and investment properties, and she has facilitated transactions ranging from starter condos to multi-million dollar estates. She maintains a team of trusted professionals including inspectors, contractors, designers, and mortgage specialists, ensuring her clients have access to the best resources throughout their real estate journey. Sophia's client retention rate is over 95%, and many consider her not just an agent, but a trusted advisor and friend."
+    },
+    {
+      "id": 11,
+      "name": "William Chen",
+      "phoneNumber": "+1 555-111-0000",
+      "email": "william.chen@nexusrealty.com",
+      "websiteUrl": "https://nexusrealty.com/williamchen",
+      "profileImageUrl": "https://images.unsplash.com/photo-1599308051662-421736b42b3b?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "rating": 2,
+      "bio": "William Chen entered the real estate industry five years ago with high hopes and ambitious goals, but has found the competitive nature of the business more challenging than expected. While William is knowledgeable about property values and market conditions, he sometimes struggles with time management and follow-through on client communications. His technical skills are strong, and he's proficient with all the latest real estate software and platforms, but building lasting client relationships has proven difficult. William tends to focus heavily on the transactional aspects of real estate rather than the relationship-building side of the business. He is working with a business coach to improve his client service skills and develop better organizational systems. Despite these challenges, William remains committed to the profession and is gradually building a modest but steady client base through online marketing and open houses."
+    },
+    {
+      "id": 12,
+      "name": "Ava Rodriguez",
+      "phoneNumber": "+1 555-000-1111",
+      "email": "ava.rodriguez@dreamkeyproperties.com",
+      "websiteUrl": "https://dreamkeyproperties.com/avarodriguez",
+      "profileImageUrl": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "rating": 4,
+      "bio": "Ava Rodriguez is a creative and energetic real estate agent who has made a name for herself by specializing in unique and unconventional properties. With 11 years of experience, Ava has developed a particular expertise in loft conversions, historic properties, and homes with distinctive architectural features. Her background in art history and urban planning gives her a unique perspective on property potential and neighborhood development. Ava is known for her innovative marketing campaigns, often featuring professional photography, compelling storytelling, and immersive property videos. She has a talent for matching quirky properties with the right buyers who will appreciate their character and potential. Ava is also passionate about urban renewal and frequently works with buyers interested in renovation projects, connecting them with architects, contractors, and designers who can help bring their vision to life."
+    }
+  ]
+}
