@@ -12,7 +12,7 @@ function Listings({
 }) {
   return (
     <div className={`${mt} ${width || "w-[90%]"} mx-auto`}>
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-10">
         {searchedProperties.map((property) => {
           return <Property key={property.id} property={property} />;
         })}

@@ -112,7 +112,8 @@ export const axiosRequest = {
   },
   getPropertyByID: async (
     id: number,
-    setPropertiesRequest: React.Dispatch<React.SetStateAction<propertyRequest>>
+    setPropertiesRequest: React.Dispatch<React.SetStateAction<propertyRequest>>,
+    setNotFound: React.Dispatch<React.SetStateAction<boolean>>
   ) => {
     setPropertiesRequest((currentRequestState) => ({
       ...currentRequestState,
@@ -125,18 +126,27 @@ export const axiosRequest = {
         `http://localhost:3001/properties/${id}`,
         { timeout: 10000 }
       );
+      if (!response.data || Object.keys(response.data).length === 0) {
+        setNotFound(true);
+        return;
+      }
 
       setPropertiesRequest((currentRequestState) => ({
         ...currentRequestState,
         isLoading: false,
         properties: [response.data], // Single property in array
       }));
+
       return response.data;
     } catch (err) {
       let errorMsg = "An unknown error occurred while fetching property.";
 
       if (axios.isAxiosError(err)) {
         const axiosError = err as AxiosError;
+        if (err.response?.status === 404) {
+          setNotFound(true);
+          return;
+        }
 
         if (!axiosError.response) {
           // Network error (no response from server)
@@ -202,7 +212,8 @@ export const axiosRequest = {
   },
   getAgentByID: async (
     id: number,
-    setAgentsRequest: React.Dispatch<React.SetStateAction<agentRequest>>
+    setAgentsRequest: React.Dispatch<React.SetStateAction<agentRequest>>,
+    setNotFound: React.Dispatch<React.SetStateAction<boolean>>
   ) => {
     setAgentsRequest((currentRequestState) => ({
       ...currentRequestState,
@@ -214,6 +225,11 @@ export const axiosRequest = {
       const response = await axios.get(`http://localhost:3001/agents/${id}`, {
         timeout: 10000,
       });
+
+      if (!response.data || Object.keys(response.data).length === 0) {
+        setNotFound(true);
+        return;
+      }
 
       setAgentsRequest((currentRequestState) => ({
         ...currentRequestState,
@@ -228,6 +244,10 @@ export const axiosRequest = {
       if (axios.isAxiosError(err)) {
         const axiosError = err as AxiosError;
 
+        if (err.response?.status === 404) {
+          setNotFound(true);
+          return;
+        }
         if (!axiosError.response) {
           // Network error (no response from server)
           if (axiosError.code === "ECONNABORTED") {

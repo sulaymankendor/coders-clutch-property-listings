@@ -1,7 +1,12 @@
-import React from "react";
-import { Eye, EyeOff, LockKeyhole, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 
-function EmailInput() {
+function EmailInput({
+  email,
+  setEmail,
+}: {
+  email: string;
+  setEmail: React.Dispatch<React.SetStateAction<string>>;
+}) {
   return (
     <div className="flex items-center font-medium outline-[1px] outline-gray-300 rounded-lg">
       <div className="py-1 pl-[11px]">
@@ -9,8 +14,12 @@ function EmailInput() {
       </div>
 
       <input
-        name="email"
+        required
+        id="email"
+        type="email"
         placeholder="example@gmail.com"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
         // onChange={(event) => setEmail(event.target.value)}
         className="font-normal outline-0 text-[13px] text-gray-600 w-full py-[10px] px-2"
       />

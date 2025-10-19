@@ -10,6 +10,7 @@ export type propertyType = {
   description: string;
   imageUrl: string;
   rating: number;
+  listedAt: string;
 };
 
 export type agentType = {

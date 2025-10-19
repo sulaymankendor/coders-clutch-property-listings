@@ -14,7 +14,7 @@ function page() {
     searchAgents(searchText, agentsRequest.agents, setSearchedAgents);
   }, [searchText]);
   return (
-    <section className="w-[90%] mx-auto">
+    <section className="w-[95%] sm:w-[90%] mx-auto px-4 sm:px-0">
       <AgentsSearch
         numberOfResults={searchedAgents.length}
         searchText={searchText}
@@ -24,13 +24,13 @@ function page() {
       {agentsRequest.isLoading ? (
         <LoadingSpinner />
       ) : agentsRequest.errorMsg ? (
-        <div className="text-center py-10">
+        <div className="text-center py-8 sm:py-10">
           <p className="text-red-700 text-sm">{agentsRequest.errorMsg}</p>
         </div>
       ) : agentsRequest.agents && agentsRequest.agents.length > 0 ? (
         <AgentsListings agents={searchedAgents} />
       ) : (
-        <div className="text-center py-10">
+        <div className="text-center py-8 sm:py-10">
           <p className="text-gray-500 text-sm">No agent found</p>
         </div>
       )}

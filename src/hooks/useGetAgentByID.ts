@@ -3,6 +3,7 @@ import type { agentRequest } from "@/utils/type";
 import { useEffect, useState } from "react";
 
 export const useGetAgentByID = (id: number) => {
+  const [notFound, setNotFound] = useState(false);
   const [agentRequest, setAgentRequest] = useState<agentRequest>({
     errorMsg: "",
     isLoading: true,
@@ -19,7 +20,11 @@ export const useGetAgentByID = (id: number) => {
   });
   useEffect(() => {
     const fetchAgentByID = async () => {
-      const agent = await axiosRequest.getAgentByID(id, setAgentRequest);
+      const agent = await axiosRequest.getAgentByID(
+        id,
+        setAgentRequest,
+        setNotFound
+      );
       setAgentRequest((currentRequestState) => {
         return { ...currentRequestState, agent: agent };
       });
@@ -27,5 +32,5 @@ export const useGetAgentByID = (id: number) => {
     fetchAgentByID();
   }, []);
 
-  return { agentRequest };
+  return { agentRequest, notFound };
 };

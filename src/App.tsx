@@ -6,20 +6,28 @@ import PropertyDetails from "./components/pages/PropertyDetails";
 import AgentDetails from "./components/pages/AgentDetails";
 import AboutUs from "./components/pages/AboutUs";
 import SignIn from "./components/pages/SignIn";
+import { ProtectedRoutes } from "./components/reusables/ProtectedRoutes";
+import { PublicRoutes } from "./components/reusables/PublicRoutes";
+import { NotFound } from "./components/pages/NotFound";
 
 function App() {
   return (
     <section>
-      <Header />
-
       <section className="mt-32 mb-20">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/property/:id" element={<PropertyDetails />} />
-          <Route path="/agents" element={<Agents />} />
-          <Route path="/agent/:id" element={<AgentDetails />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/sign-in" element={<SignIn />} />
+          <Route element={<PublicRoutes />}>
+            <Route path="/sign-in" element={<SignIn />} />
+          </Route>
+
+          <Route element={<ProtectedRoutes />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/properties/:id" element={<PropertyDetails />} />
+            <Route path="/agents" element={<Agents />} />
+            <Route path="/agent/:id" element={<AgentDetails />} />
+            <Route path="/about-us" element={<AboutUs />} />
+          </Route>
+          <Route path="*" element={<NotFound />} />
+          <Route path="/not-found" element={<NotFound />} />
         </Routes>
       </section>
     </section>

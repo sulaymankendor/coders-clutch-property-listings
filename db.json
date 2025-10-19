@@ -11,7 +11,8 @@
       "slug": "luxury-city-apartment",
       "description": "Experience sophisticated urban living in this luxury city apartment located in the vibrant heart of downtown New York. The residence features floor-to-ceiling windows that flood the space with natural light, a modern kitchen with stainless steel appliances, and high-end finishes throughout. With convenient access to world-class restaurants, boutiques, and cultural landmarks, this apartment perfectly blends comfort with cosmopolitan style.",
       "imageUrl": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80",
-      "rating": 5
+      "rating": 5,
+      "listedAt": "2025-09-15T10:00:00Z"
     },
     {
       "id": 2,
@@ -24,7 +25,8 @@
       "slug": "cozy-suburban-home",
       "description": "Nestled in a quiet and friendly Brooklyn neighborhood, this cozy suburban home offers a peaceful retreat just minutes from the city. It features spacious living areas, an open kitchen with modern finishes, and a private backyard perfect for outdoor gatherings. With excellent nearby schools, parks, and shopping options, it's the ideal choice for families seeking comfort and community.",
       "imageUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
-      "rating": 4
+      "rating": 4,
+      "listedAt": "2025-09-15T10:00:00Z"
     },
     {
       "id": 3,
@@ -37,7 +39,8 @@
       "slug": "modern-loft",
       "description": "This modern loft in Soho combines industrial charm with contemporary elegance. Boasting high ceilings, exposed brick walls, and an open-concept floor plan, it provides a spacious and stylish living environment. Residents can enjoy walking distance to galleries, designer stores, and some of the finest dining experiences New York has to offer.",
       "imageUrl": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
-      "rating": 5
+      "rating": 5,
+      "listedAt": "2025-09-15T10:00:00Z"
     },
     {
       "id": 4,
@@ -50,7 +53,8 @@
       "slug": "spacious-family-house",
       "description": "This spacious family house in Queens is perfect for growing families seeking both space and comfort. The property offers a large kitchen, a bright living room, and a backyard ideal for children and pets. Its location provides easy access to local schools, parks, and public transportation, making daily life both convenient and enjoyable.",
       "imageUrl": "https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=800&q=80",
-      "rating": 4
+      "rating": 4,
+      "listedAt": "2025-09-15T10:00:00Z"
     },
     {
       "id": 5,
@@ -63,7 +67,8 @@
       "slug": "penthouse-suite",
       "description": "Perched high above Manhattan, this stunning penthouse suite offers panoramic views of the city skyline. It features a private rooftop terrace, spa-inspired bathrooms, and luxurious interiors crafted with the finest materials. Perfect for those who value privacy and elegance, this penthouse delivers an unmatched New York living experience.",
       "imageUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-      "rating": 5
+      "rating": 5,
+      "listedAt": "2025-09-15T10:00:00Z"
     },
     {
       "id": 6,
@@ -76,7 +81,8 @@
       "slug": "beachside-villa",
       "description": "Wake up to the sound of waves in this stunning beachside villa located on the shores of Miami Beach. Designed with a modern coastal aesthetic, it features an open floor plan, infinity pool, and spacious outdoor lounge areas perfect for entertaining. The villa provides the ultimate combination of luxury, relaxation, and breathtaking ocean views.",
       "imageUrl": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80",
-      "rating": 5
+      "rating": 5,
+      "listedAt": "2025-09-15T10:00:00Z"
     },
     {
       "id": 7,
@@ -89,7 +95,8 @@
       "slug": "downtown-studio",
       "description": "This stylish downtown studio in Chicago offers compact yet efficient living designed for modern professionals. The unit includes high-end finishes, in-unit laundry, and large windows showcasing the city's skyline. Located just steps away from coffee shops, restaurants, and transit, it's the perfect base for urban living.",
       "imageUrl": "https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=800&q=80",
-      "rating": 3
+      "rating": 3,
+      "listedAt": "2025-09-15T10:00:00Z"
     },
     {
       "id": 8,
@@ -102,7 +109,8 @@
       "slug": "countryside-cottage",
       "description": "Escape city life and enjoy peaceful country living in this charming countryside cottage just outside Nashville. Featuring a rustic design with a cozy fireplace, exposed beams, and a large porch overlooking scenic views, it's ideal for relaxation. The property sits on a spacious lot surrounded by trees, offering complete privacy and serenity.",
       "imageUrl": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80",
-      "rating": 4
+      "rating": 4,
+      "listedAt": "2025-09-15T10:00:00Z"
     },
     {
       "id": 9,
@@ -115,7 +123,8 @@
       "slug": "luxury-high-rise-condo",
       "description": "This luxury high-rise condo in the heart of San Francisco combines modern design with unparalleled amenities. Enjoy floor-to-ceiling glass walls, smart home features, and access to a state-of-the-art gym and concierge service. Perfectly situated near tech hubs, fine dining, and cultural hotspots, it provides the ideal urban lifestyle.",
       "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
-      "rating": 5
+      "rating": 5,
+      "listedAt": "2025-09-15T10:00:00Z"
     },
     {
       "id": 10,
@@ -128,7 +137,8 @@
       "slug": "modern-townhouse",
       "description": "Located in one of Austin's most desirable neighborhoods, this modern townhouse offers stylish architecture and open, airy interiors. It features a gourmet kitchen, private garage, and outdoor patio ideal for evening relaxation. With nearby cafes, music venues, and walking trails, it's a perfect balance of modern comfort and local charm.",
       "imageUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
-      "rating": 4
+      "rating": 4,
+      "listedAt": "2025-09-15T10:00:00Z"
     },
     {
       "id": 11,
@@ -141,7 +151,8 @@
       "slug": "chic-historic-brownstone",
       "description": "Live in classic Boston elegance with this beautifully restored brownstone apartment. Featuring high ceilings, original hardwood floors, and period details, this unit offers a blend of historic charm and modern amenities. Situated in a coveted neighborhood, you're steps from boutique shopping, public gardens, and top dining spots.",
       "imageUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
-      "rating": 2
+      "rating": 2,
+      "listedAt": "2025-09-15T10:00:00Z"
     },
     {
       "id": 12,
@@ -154,7 +165,8 @@
       "slug": "ski-in-ski-out-chalet",
       "description": "The ultimate mountain retreat, this luxurious chalet offers direct slope access. It features a massive stone fireplace, a gourmet kitchen, and a private hot tub with stunning views of the Rockies. Perfect for winter sports enthusiasts seeking comfort and convenience.",
       "imageUrl": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
-      "rating": 5
+      "rating": 5,
+      "listedAt": "2025-09-15T10:00:00Z"
     }
   ],
   "agents": [

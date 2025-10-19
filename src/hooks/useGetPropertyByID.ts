@@ -3,6 +3,7 @@ import type { propertyRequest } from "@/utils/type";
 import { useEffect, useState } from "react";
 
 export const useGetPropertyByID = (id: number) => {
+  const [notFound, setNotFound] = useState(false);
   const [propertyRequest, setPropertyRequest] = useState<propertyRequest>({
     errorMsg: "",
     isLoading: true,
@@ -17,13 +18,16 @@ export const useGetPropertyByID = (id: number) => {
       slug: "",
       description: "",
       imageUrl: "",
+      listedAt: "",
+      rating: 0,
     },
   });
   useEffect(() => {
     const fetchPropertyByID = async () => {
       const property = await axiosRequest.getPropertyByID(
         id,
-        setPropertyRequest
+        setPropertyRequest,
+        setNotFound
       );
       setPropertyRequest((currentRequestState) => {
         return { ...currentRequestState, property: property };
@@ -32,5 +36,5 @@ export const useGetPropertyByID = (id: number) => {
     fetchPropertyByID();
   }, []);
 
-  return { propertyRequest };
+  return { propertyRequest, notFound };
 };

@@ -2,7 +2,7 @@ import EnvelopeIcon from "@/components/svgs/EnvelopeIcon";
 import GlobeIcon from "@/components/svgs/GlobeIcon";
 import PhoneIcon from "@/components/svgs/PhoneIcon";
 import FiveStarsRate from "../reusables/FiveStarsRate";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { useGetAgentByID } from "@/hooks/useGetAgentByID";
 import { Award, Briefcase, MapPin, TrendingUp, Home } from "lucide-react";
 import { LoadingSpinner } from "../reusables/LoadingSpinner";
@@ -10,7 +10,11 @@ import { LoadingSpinner } from "../reusables/LoadingSpinner";
 
 function AgentDetails() {
   const { id } = useParams();
-  const { agentRequest } = useGetAgentByID(Number(id));
+  const { agentRequest, notFound } = useGetAgentByID(Number(id));
+
+  if (notFound) {
+    return <Navigate to="/not-found" replace />;
+  }
 
   if (agentRequest.isLoading) {
     return (

@@ -9,6 +9,7 @@ import { searchProperties } from "@/utils/searchProperties";
 import { filterByLocation } from "@/utils/filterByLocaiton";
 import { filterByPriceRange } from "@/utils/filterByPriceRange";
 import { filterBySorting } from "@/utils/filterBySorting";
+import { Link } from "react-router-dom";
 const initialFilterValues = {
   location: "",
   priceRange: { minimum: 0, maximum: 0 },
@@ -56,25 +57,25 @@ function Home() {
   }, [searchText, filter]);
   return (
     <section>
-      <div className="grid grid-cols-2 gap-8 [1281px]:w-[70%] w-[75%] max-[1281px]:gap-8 mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 w-[90%] sm:w-[85%] lg:w-[75%] xl:w-[70%] mx-auto">
         <img
           src={heroImage}
           alt="hero image"
           width={20000000}
           height={20000000}
-          className="w-[37rem] h-[22rem] rounded-3xl"
+          className="w-full h-[18rem] sm:h-[20rem] lg:h-[22rem] rounded-3xl object-cover"
         />
-        <div className="mt-5 text-start">
-          <h1 className="font-medium text-4xl text-gray-800">
+        <div className="mt-2 sm:mt-5 text-start">
+          <h1 className="font-medium text-2xl sm:text-3xl lg:text-4xl text-gray-800">
             Find your <span className="text-sky-700">Dream Home</span>
           </h1>
-          <p className="text-gray-600 text-left [1281px]:text-base text-sm">
+          <p className="text-gray-600 text-left text-sm sm:text-base mt-2">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
             dicta aliquid ab perferendis facere quod amet numquam ipsum placeat
             molestias quaerat perspiciatis, cupiditate incidunt veniam iste
             earum laboriosam tempore eos.
           </p>
-          <div className="flex mb-12 items-center justify-between">
+          <div className="grid grid-cols-2 sm:flex sm:items-center sm:justify-between gap-4 mb-8 sm:mb-12">
             {[
               { id: 1, name: "Total Properties", stat: "5,200" },
               { id: 2, name: "Agents", stat: "200" },
@@ -82,19 +83,19 @@ function Home() {
               { id: 4, name: "Customers", stat: "12,000" },
             ].map((item) => (
               <div key={item.id} className="mt-4">
-                <h2 className="text-xl text-center font-semibold text-gray-800">
+                <h2 className="text-lg sm:text-xl text-center font-semibold text-gray-800">
                   {item.stat}
                 </h2>
                 <p className="text-gray-600 text-xs text-center">{item.name}</p>
               </div>
             ))}
           </div>
-          <a
-            href={"/"}
-            className="bg-sky-600 text-sm transition-all hover:bg-sky-700 px-9 py-[15px] text-white rounded-lg font-medium"
+          <Link
+            to={"/about-us"}
+            className="inline-block bg-sky-600 text-sm transition-all hover:bg-sky-700 px-6 sm:px-9 py-[12px] sm:py-[15px] text-white rounded-lg font-medium"
           >
-            Get Started
-          </a>
+            Read More
+          </Link>
         </div>
       </div>
       <ListingSearchFiltering

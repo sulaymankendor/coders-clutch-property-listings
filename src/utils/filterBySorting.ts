@@ -15,10 +15,10 @@ export const filterBySorting = (
     }
 
     if (sortText === "recent") {
-      return b.id - a.id; // Assuming higher ID = more recent
+      return new Date(b.listedAt).getTime() - new Date(a.listedAt).getTime();
     }
 
-    return 0; // No sorting if sortText doesn't match
+    return 0;
   });
 
   setSearchedProperties(sortedProperties);
