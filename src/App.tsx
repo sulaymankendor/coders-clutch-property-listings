@@ -5,6 +5,7 @@ import Agents from "./components/pages/Agents";
 import PropertyDetails from "./components/pages/PropertyDetails";
 import AgentDetails from "./components/pages/AgentDetails";
 import AboutUs from "./components/pages/AboutUs";
+import SignIn from "./components/pages/SignIn";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/agents" element={<Agents />} />
           <Route path="/agent/:id" element={<AgentDetails />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/sign-in" element={<SignIn />} />
         </Routes>
       </section>
     </section>

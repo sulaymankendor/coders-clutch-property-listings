@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { navs } from "../../utils/data";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Header() {
   const pathname = useLocation().pathname;
@@ -46,12 +46,12 @@ function Header() {
 
           {/* Contact Button */}
           <div className="flex max-sm:hidden items-center space-x-4">
-            <a
-              href={"/sign-up"}
+            <Link
+              to={"/sign-in"}
               className="border-sky-500 hover:border-sky-400 transition-all border-[1.5px] text-sm bg-sky-600 hover:bg-sky-500 text-white px-7 py-3 rounded-lg font-medium"
             >
               Sign In
-            </a>
+            </Link>
           </div>
           {/* Mobile Menu Button */}
           <button
