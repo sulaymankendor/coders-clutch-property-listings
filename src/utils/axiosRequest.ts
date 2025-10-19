@@ -6,9 +6,6 @@ import type {
   propertyRequest,
 } from "./type";
 
-// Use environment variable for API URL
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3001";
-
 export const axiosRequest = {
   getProperties: async (
     routeSegment: string,
@@ -22,7 +19,7 @@ export const axiosRequest = {
     }));
 
     try {
-      const response = await axios.get(`${API_URL}/${routeSegment}`);
+      const response = await axios.get(`http://localhost:3001/${routeSegment}`);
       setPropertiesRequest((currentRequestState) => ({
         ...currentRequestState,
         isLoading: false,
@@ -71,7 +68,7 @@ export const axiosRequest = {
     }));
 
     try {
-      const response = await axios.get(`${API_URL}/${routeSegment}`);
+      const response = await axios.get(`http://localhost:3001/${routeSegment}`);
       setPropertiesRequest((currentRequestState) => ({
         ...currentRequestState,
         isLoading: false,
@@ -122,9 +119,10 @@ export const axiosRequest = {
     }));
 
     try {
-      const response = await axios.get(`${API_URL}/properties/${id}`, {
-        timeout: 10000,
-      });
+      const response = await axios.get(
+        `http://localhost:3001/properties/${id}`,
+        { timeout: 10000 }
+      );
       if (!response.data || Object.keys(response.data).length === 0) {
         setNotFound(true);
         return;
@@ -221,7 +219,7 @@ export const axiosRequest = {
     }));
 
     try {
-      const response = await axios.get(`${API_URL}/agents/${id}`, {
+      const response = await axios.get(`http://localhost:3001/agents/${id}`, {
         timeout: 10000,
       });
 
