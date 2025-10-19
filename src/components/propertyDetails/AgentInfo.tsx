@@ -2,7 +2,6 @@ import PhoneIcon from "../svgs/PhoneIcon";
 import EnvelopeIcon from "../svgs/EnvelopeIcon";
 import GlobeIcon from "../svgs/GlobeIcon";
 import FiveStarsRate from "../reusables/FiveStarsRate";
-import profileImg from "../../assets/profile.jpg";
 import type { agentType } from "@/utils/type";
 import { useNavigate } from "react-router-dom";
 
@@ -14,7 +13,7 @@ function AgentInfo({ agent }: { agent: agentType }) {
       <div className="mt-3">
         <div className="flex items-center gap-2 mb-3">
           <img
-            src={profileImg}
+            src={agent.profileImageUrl}
             alt="hero image"
             width={1920} // or the actual image width
             height={1080} // or the actual image height
