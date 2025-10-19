@@ -70,10 +70,12 @@ function Home() {
             Find your <span className="text-sky-700">Dream Home</span>
           </h1>
           <p className="text-gray-600 text-left text-sm sm:text-base mt-2">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
-            dicta aliquid ab perferendis facere quod amet numquam ipsum placeat
-            molestias quaerat perspiciatis, cupiditate incidunt veniam iste
-            earum laboriosam tempore eos.
+            Discover the perfect place to call home. Explore a wide range of
+            beautiful properties designed to match your lifestyle and budget.
+            From modern city apartments to peaceful suburban houses, each
+            listing is carefully selected to offer comfort, convenience, and
+            lasting value. Start your journey today and find the home that truly
+            feels like yours.
           </p>
           <div className="grid grid-cols-2 sm:flex sm:items-center sm:justify-between gap-4 mb-8 sm:mb-12">
             {[

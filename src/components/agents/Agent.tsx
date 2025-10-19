@@ -4,14 +4,13 @@ import EnvelopeIcon from "../svgs/EnvelopeIcon";
 import PhoneIcon from "../svgs/PhoneIcon";
 import FiveStarsRate from "../reusables/FiveStarsRate";
 import { Link } from "react-router-dom";
-import profileUrl from "../../assets/profile.jpg";
 import type { agentType } from "../../utils/type";
 
 function Agent({ agent }: { agent: agentType }) {
   return (
     <div className="border border-gray-200 py-4 rounded-lg relative">
       <img
-        src={profileUrl}
+        src={agent.profileImageUrl}
         alt="hero image"
         width={1920}
         height={1080}
