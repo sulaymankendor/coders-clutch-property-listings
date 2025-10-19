@@ -2,7 +2,6 @@ import { Locations } from "../reusables/Locations";
 import SearchBar from "../reusables/SearchBar";
 import { PriceRangeFilter } from "../reusables/PriceRangeFilter";
 import { SortBy } from "../reusables/SortBy";
-import type { propertyType } from "@/utils/type";
 
 function ListingSearchFiltering({
   filter,

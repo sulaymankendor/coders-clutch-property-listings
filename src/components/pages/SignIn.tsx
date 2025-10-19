@@ -1,9 +1,7 @@
-"use client";
-import GoogleLogoIcon from "@/components/svgs/GoogleLogoIcon";
-import { Eye, EyeOff, LockKeyhole, Mail } from "lucide-react";
+import { Eye, EyeOff, LockKeyhole } from "lucide-react";
 import { useState } from "react";
 import EmailInput from "../reusables/EmailInput";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import signInImg from "@/assets/house2.jpg";
 import { useAuth, useSignIn } from "@clerk/clerk-react";
 

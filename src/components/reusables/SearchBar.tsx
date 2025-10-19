@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import SearchIcon from "../svgs/SearchIcon";
-import type { propertyType } from "@/utils/type";
 
 function SearchBar({
   className,

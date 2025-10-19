@@ -6,7 +6,6 @@ import { Navigate, useParams } from "react-router-dom";
 import { useGetAgentByID } from "@/hooks/useGetAgentByID";
 import { Award, Briefcase, MapPin, TrendingUp, Home } from "lucide-react";
 import { LoadingSpinner } from "../reusables/LoadingSpinner";
-// import LoadingSpinner from "@/components/LoadingSpinner";
 
 function AgentDetails() {
   const { id } = useParams();

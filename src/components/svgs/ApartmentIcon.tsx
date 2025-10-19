@@ -1,5 +1,3 @@
-import React from "react";
-
 function ApartmentIcon({ className }: { className: string }) {
   return (
     <svg

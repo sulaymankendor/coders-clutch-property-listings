@@ -1,5 +1,3 @@
-import React from "react";
-
 function LocationIcon({ size }: { size: string }) {
   return (
     <svg

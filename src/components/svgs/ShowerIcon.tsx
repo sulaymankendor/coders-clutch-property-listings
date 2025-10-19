@@ -1,5 +1,3 @@
-import React from "react";
-
 function ShowerIcon({ size }: { size: string }) {
   return (
     <svg

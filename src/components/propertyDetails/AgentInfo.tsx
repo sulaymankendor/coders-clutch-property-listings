@@ -1,11 +1,10 @@
-import React from "react";
 import PhoneIcon from "../svgs/PhoneIcon";
 import EnvelopeIcon from "../svgs/EnvelopeIcon";
 import GlobeIcon from "../svgs/GlobeIcon";
 import FiveStarsRate from "../reusables/FiveStarsRate";
 import profileImg from "../../assets/profile.jpg";
 import type { agentType } from "@/utils/type";
-import { Link, Router, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function AgentInfo({ agent }: { agent: agentType }) {
   const navigate = useNavigate();

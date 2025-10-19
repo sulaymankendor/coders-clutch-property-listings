@@ -1,4 +1,4 @@
-import { use, useState } from "react";
+import { useState } from "react";
 import { navs } from "../../utils/data";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "@clerk/clerk-react";

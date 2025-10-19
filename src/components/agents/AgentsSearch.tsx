@@ -1,4 +1,3 @@
-import { Locations } from "../reusables/Locations";
 import SearchBar from "../reusables/SearchBar";
 
 function AgentsSearch({

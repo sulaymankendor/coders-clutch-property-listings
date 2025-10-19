@@ -1,5 +1,3 @@
-import React from "react";
-
 function FiveStarsRate({ rating, size }: { rating: number; size?: string }) {
   return (
     <div className="flex items-center gap-[1.5px]">

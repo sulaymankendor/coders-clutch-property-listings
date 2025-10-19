@@ -1,5 +1,3 @@
-"use client";
-import React from "react";
 import ArrowUpRightIcon from "../svgs/ArrowUpRightIcon";
 import GlobeIcon from "../svgs/GlobeIcon";
 import EnvelopeIcon from "../svgs/EnvelopeIcon";

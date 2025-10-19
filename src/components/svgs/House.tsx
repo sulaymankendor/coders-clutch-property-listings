@@ -1,5 +1,3 @@
-import React from "react";
-
 function House({ className }: { className: string }) {
   return (
     <svg

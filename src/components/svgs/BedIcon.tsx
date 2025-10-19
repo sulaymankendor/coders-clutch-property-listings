@@ -1,5 +1,3 @@
-import React from "react";
-
 function BedIcon({ size }: { size: string }) {
   return (
     <svg

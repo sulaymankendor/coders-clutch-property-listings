@@ -1,5 +1,3 @@
-import React from "react";
-
 function OfficeIcon({ className }: { className: string }) {
   return (
     <svg

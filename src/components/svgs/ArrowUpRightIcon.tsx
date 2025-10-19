@@ -1,5 +1,3 @@
-import React from "react";
-
 function ArrowUpRightIcon({ size }: { size?: string }) {
   return (
     <svg

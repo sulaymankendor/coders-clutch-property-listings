@@ -1,5 +1,4 @@
-"use client";
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import FiveStarsRate from "./FiveStarsRate";
 import AddRating from "./AddRating";
 
@@ -32,11 +31,11 @@ const SpinnerLoading = () => {
 function Reviews() {
   const [rate, setRate] = useState(0);
   const [review, setReview] = useState("");
-  const [isPosting, setIsPosting] = useState(false);
+  const [isPosting] = useState(false);
 
-  const [listOfReviews, setListOfReviews] = useState<
-    Array<{ id: string; [key: string]: any }>
-  >([]);
+  const [listOfReviews] = useState<Array<{ id: string; [key: string]: any }>>(
+    []
+  );
 
   return (
     <div>

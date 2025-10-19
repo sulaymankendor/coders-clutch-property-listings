@@ -2,11 +2,8 @@ import axios, { AxiosError } from "axios";
 import type {
   agentRequest,
   agentsRequest,
-  agentType,
   propertiesRequest,
   propertyRequest,
-  propertyType,
-  requestState,
 } from "./type";
 
 export const axiosRequest = {
