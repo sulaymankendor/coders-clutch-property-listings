@@ -15,7 +15,7 @@ email: codersclutch@gmail.com
 password: codersclutch
 storedJWT localStorage identifier: "JWT"
 
-## Setup
+## Run Instructions
 
 1, npm install -- to install all the packages
 2, npm run dev -- to run the project
