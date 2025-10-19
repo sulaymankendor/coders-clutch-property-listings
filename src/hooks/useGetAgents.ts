@@ -1,8 +1,10 @@
 import { axiosRequest } from "@/utils/axiosRequest";
-import type { agentsRequest } from "@/utils/type";
+import type { agentsRequest, agentType } from "@/utils/type";
 import { useEffect, useState } from "react";
 
-export const useGetAgents = () => {
+export const useGetAgents = (
+  setSearchedAgents: React.Dispatch<React.SetStateAction<agentType[]>>
+) => {
   const [agentsRequest, setAgentsRequest] = useState<agentsRequest>({
     errorMsg: "",
     isLoading: true,
@@ -17,6 +19,7 @@ export const useGetAgents = () => {
       setAgentsRequest((currentRequestState) => {
         return { ...currentRequestState, agents: fetchedAgents };
       });
+      setSearchedAgents(fetchedAgents);
     };
     fetchAgents();
   }, []);

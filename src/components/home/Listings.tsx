@@ -1,25 +1,19 @@
-import { useEffect, useState } from "react";
 import type { propertyType } from "../../utils/type";
 import Property from "./Property";
-import { axiosRequest } from "@/utils/axiosRequest";
 
 function Listings({
-  propertiesRequest,
+  searchedProperties,
   mt,
   width,
 }: {
-  propertiesRequest: {
-    errorMsg: string;
-    isLoading: boolean;
-    properties: never[] | propertyType[];
-  };
+  searchedProperties: propertyType[];
   mt?: string;
   width?: string;
 }) {
   return (
     <div className={`${mt} ${width || "w-[90%]"} mx-auto`}>
       <div className="grid grid-cols-3 gap-10">
-        {propertiesRequest.properties.map((property) => {
+        {searchedProperties.map((property) => {
           return <Property key={property.id} property={property} />;
         })}
       </div>

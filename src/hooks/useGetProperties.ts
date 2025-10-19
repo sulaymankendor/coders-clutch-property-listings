@@ -1,8 +1,10 @@
 import { axiosRequest } from "@/utils/axiosRequest";
-import type { propertiesRequest } from "@/utils/type";
+import { type propertiesRequest, type propertyType } from "@/utils/type";
 import { useEffect, useState } from "react";
 
-export const useGetProperties = () => {
+export const useGetProperties = (
+  setSearchedProperties: React.Dispatch<React.SetStateAction<propertyType[]>>
+) => {
   const [propertiesRequest, setPropertiesRequest] = useState<propertiesRequest>(
     {
       errorMsg: "",
@@ -10,6 +12,7 @@ export const useGetProperties = () => {
       properties: [],
     }
   );
+
   useEffect(() => {
     const fetchProperties = async () => {
       const fetchedProperties = await axiosRequest.getProperties(
@@ -19,6 +22,7 @@ export const useGetProperties = () => {
       setPropertiesRequest((currentRequestState) => {
         return { ...currentRequestState, properties: fetchedProperties };
       });
+      setSearchedProperties(fetchedProperties);
     };
     fetchProperties();
   }, []);

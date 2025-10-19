@@ -4,6 +4,7 @@ import Home from "./components/pages/Home";
 import Agents from "./components/pages/Agents";
 import PropertyDetails from "./components/pages/PropertyDetails";
 import AgentDetails from "./components/pages/AgentDetails";
+import AboutUs from "./components/pages/AboutUs";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/property/:id" element={<PropertyDetails />} />
           <Route path="/agents" element={<Agents />} />
           <Route path="/agent/:id" element={<AgentDetails />} />
+          <Route path="/about-us" element={<AboutUs />} />
         </Routes>
       </section>
     </section>
